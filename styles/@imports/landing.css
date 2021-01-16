@@ -22,6 +22,12 @@
   color: #eee;
 }
 
+@media (min-width: 1024px) {
+  #landing {
+    min-height: 90vh;
+  }
+}
+
 #landing h1 {
   font-size: 1.2em;
   margin-bottom: .2em;

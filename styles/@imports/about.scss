@@ -2,21 +2,9 @@ $theme:rgb(25,25,112);
 $bgcolor: rgb(0,0,128);
 $color: #eee;
 
-// responsive
-$desktop:1024px;
-
-@mixin desktop {
-    @media(min-width: #{$desktop}){
-        @content
-    }
-}
-
 #about{
     padding: 1.2rem;
     text-align: center;
-    @include desktop{
-        min-height: 90vh;
-    }
     h1{
         margin-bottom: 1.2rem;
     }
