@@ -30,7 +30,7 @@ $desktop:1024px;
     align-items: center;
     color: $color;
     @include desktop{
-        min-height: 80vh;
+        min-height: 85vh;
         background-size: cover;
         background-position-x: calc(100% + 14rem);
         background-position-y: -4rem;
