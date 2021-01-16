@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  #about {
+    min-height: 90vh;
+  }
+}
+
 #about h1 {
   margin-bottom: 1.2rem;
 }
