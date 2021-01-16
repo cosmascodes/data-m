@@ -20,7 +20,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #eee;
+  color: #999;
 }
 
 @media (min-width: 768px) {
