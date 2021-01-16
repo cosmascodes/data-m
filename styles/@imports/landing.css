@@ -43,6 +43,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@media (min-width: 1024px) {
+  #landing h1 {
+    font-size: 2rem;
+  }
+}
+
 #landing p {
   font-size: .8em;
   margin-bottom: .6em;
