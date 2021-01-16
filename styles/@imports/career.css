@@ -6,7 +6,7 @@
 #careers article .career {
   height: 120px;
   background-color: #fff;
-  margin: 1.2rem auto;
+  margin: 1.2rem 0;
   overflow: hidden;
   border-radius: 8px;
   border-bottom: 2px solid navy;
@@ -21,12 +21,6 @@
           align-items: center;
   text-align: center;
   color: #2c2c2c;
-}
-
-@media (min-width: 768px) {
-  #careers article .career {
-    min-width: 90%;
-  }
 }
 
 #careers article .career h3 {
