@@ -36,11 +36,10 @@ $desktop:1024px;
         background-position-y: -4rem;
         align-items: flex-start;
         padding-left: 1.2rem;
-        line-height: 1.35em;
     }
     h1{
         font-size: 1.2em;
-        margin-bottom: .2em;
+        margin-bottom: .4em;
         margin-top: -2rem;
         font-family: 'Open Sans', sans-serif;
         @include desktop{
