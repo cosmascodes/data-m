@@ -27,7 +27,7 @@
     min-height: 80vh;
     background-size: cover;
     background-position-x: calc(100% + 9rem);
-    background-position-y: 0;
+    background-position-y: -2rem;
   }
 }
 
