@@ -28,6 +28,10 @@
     background-size: cover;
     background-position-x: calc(100% + 14rem);
     background-position-y: -4rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 1.2rem;
   }
 }
 
