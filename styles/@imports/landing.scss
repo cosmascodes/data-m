@@ -32,7 +32,7 @@ $desktop:1024px;
     @include desktop{
         min-height: 85vh;
         background-size: cover;
-        background-position-x: calc(100% + 14rem);
+        background-position-x: calc(100% + 16rem);
         background-position-y: -4rem;
         align-items: flex-start;
         padding-left: 1.2rem;

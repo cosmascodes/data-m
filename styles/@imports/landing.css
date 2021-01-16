@@ -27,7 +27,7 @@
   #landing {
     min-height: 85vh;
     background-size: cover;
-    background-position-x: calc(100% + 14rem);
+    background-position-x: calc(100% + 16rem);
     background-position-y: -4rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
