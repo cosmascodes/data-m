@@ -56,4 +56,14 @@
     grid-column-gap: .5em;
   }
 }
+
+@media (min-width: 1024px) {
+  #services .paths div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: .5em;
+  }
+}
 /*# sourceMappingURL=services.css.map */

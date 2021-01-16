@@ -84,6 +84,11 @@ $desktop:1024px;
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: .5em;
             }
+            @include desktop(){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: .5em;
+            }
         }
     }
 }
