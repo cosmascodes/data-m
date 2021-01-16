@@ -54,4 +54,8 @@
   margin-bottom: 1em;
   width: 350px;
 }
+
+#landing button {
+  font-size: inherit;
+}
 /*# sourceMappingURL=landing.css.map */
