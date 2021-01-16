@@ -38,12 +38,22 @@
   margin: 1rem 0;
 }
 
-#services .paths .path {
+#services .paths div .path {
   height: 200px;
   border-radius: .5rem;
   -webkit-box-shadow: 0 0 25px -11px #eee;
           box-shadow: 0 0 25px -11px #eee;
   margin-bottom: .5rem;
   border: 1px solid navy;
+}
+
+@media (min-width: 768px) {
+  #services .paths div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5em;
+  }
 }
 /*# sourceMappingURL=services.css.map */

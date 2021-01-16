@@ -2,6 +2,24 @@ $theme:rgb(25,25,112);
 $bgcolor: rgb(0,0,128);
 $color: #eee;
 
+// responsive
+
+$tablet:768px;
+$desktop:840px;
+
+@mixin tablet {
+    @media(min-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content
+    }
+}
+
+
 #services{
     background-color: #fff;
     padding: 0 1.2rem;
@@ -53,12 +71,19 @@ $color: #eee;
             font-size: 1.2rem;
             margin: 1rem 0;
         }
-        .path{
-            height: $height;
-            border-radius: .5rem;
-            box-shadow: 0 0 25px -11px $color;
-            margin-bottom: .5rem;
-            border: 1px solid $bgcolor;
+        div{
+            .path{
+                height: $height;
+                border-radius: .5rem;
+                box-shadow: 0 0 25px -11px $color;
+                margin-bottom: .5rem;
+                border: 1px solid $bgcolor;
+            }
+            @include tablet{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: .5em;
+            }
         }
     }
 }

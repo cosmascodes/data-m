@@ -21,4 +21,14 @@
           align-items: center;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  #careers article {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5em;
+  }
+}
 /*# sourceMappingURL=career.css.map */
