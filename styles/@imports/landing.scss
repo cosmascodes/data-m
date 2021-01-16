@@ -30,9 +30,9 @@ $desktop:1024px;
     align-items: center;
     color: $color;
     @include desktop{
-        min-height: 85vh;
+        min-height: 80vh;
         background-size: cover;
-        background-position-x: calc(100% + 18rem);
+        background-position-x: calc(100% + 14rem);
         background-position-y: -4rem;
         align-items: flex-start;
         padding-left: 1.2rem;
