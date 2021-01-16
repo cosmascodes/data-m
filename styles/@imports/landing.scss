@@ -28,6 +28,9 @@ $desktop:1024px;
     color: $color;
     @include desktop{
         min-height: 80vh;
+        background-size: contain;
+        background-position-x: calc(100% + 8.2rem);
+        background-position-y: 8.2rem;
     }
     h1{
         font-size: 1.2em;

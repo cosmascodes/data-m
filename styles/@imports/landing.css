@@ -25,6 +25,9 @@
 @media (min-width: 1024px) {
   #landing {
     min-height: 80vh;
+    background-size: contain;
+    background-position-x: calc(100% + 8.2rem);
+    background-position-y: 8.2rem;
   }
 }
 
