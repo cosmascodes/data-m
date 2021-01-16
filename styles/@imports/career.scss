@@ -1,0 +1,22 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+
+#careers{
+    padding: 1.2rem;
+    text-align: center;
+    article{
+        .career{
+            height: 120px;
+            background-color: #fff;
+            margin: 1.2rem 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border-bottom: 2px solid $bgcolor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

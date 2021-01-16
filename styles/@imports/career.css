@@ -1,0 +1,24 @@
+#careers {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+#careers article .career {
+  height: 120px;
+  background-color: #fff;
+  margin: 1.2rem 0;
+  overflow: hidden;
+  border-radius: 8px;
+  border-bottom: 2px solid navy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=career.css.map */

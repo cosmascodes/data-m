@@ -1,0 +1,56 @@
+header {
+  background-color: midnightblue;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+header label {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header label span {
+  height: 3px;
+  width: 24px;
+  background-color: white;
+  position: relative;
+}
+
+header label span:before, header label span:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 24px;
+  background-color: white;
+}
+
+header label span:before {
+  top: -7px;
+}
+
+header label span:after {
+  top: 7px;
+}
+/*# sourceMappingURL=header.css.map */

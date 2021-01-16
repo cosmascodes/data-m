@@ -1,0 +1,64 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+
+#services{
+    background-color: #fff;
+    padding: 0 1.2rem;
+    padding-bottom: 0;
+    text-align: center;
+    button{
+        border-color: $bgcolor;
+    }
+    // .card{
+    //     margin-top: 1.5rem;
+    //     padding: 1.2rem .6rem;
+    //     box-shadow: 0 0 25px -7px $color;
+    //     border-radius: .5rem;
+    //     h2{
+    //         margin-bottom: .5rem;
+    //     }
+    //     p{
+    //         margin-bottom: .6rem;
+    //     }
+    // }
+    // #courses{
+    //     background-color: $bgcolor;
+    //     color: $color;
+    //     width: 100%;
+    //     border-radius: 0;
+    // }
+    .mock{
+        margin: 0 -1.2rem;
+        background-color: $bgcolor;
+        color: #fff;
+        padding: 1.2rem;
+        h1{
+            margin-bottom: .5rem;
+        }
+        p{
+            margin-bottom: .6rem;
+        }
+        button{
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+
+    $height:200px;
+
+    .paths{
+        padding: .5rem 0;
+        h2{
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .path{
+            height: $height;
+            border-radius: .5rem;
+            box-shadow: 0 0 25px -11px $color;
+            margin-bottom: .5rem;
+            border: 1px solid $bgcolor;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#about {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+#about h1 {
+  margin-bottom: 1.2rem;
+}
+
+#about p {
+  margin-bottom: 1.2rem;
+}
+
+#about button {
+  border-color: navy;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,53 @@
+footer {
+  background-color: #0f0f0f;
+  padding: 1.2rem;
+  padding-bottom: 0;
+  color: #eee;
+}
+
+footer div {
+  margin: 1.2rem 0;
+}
+
+footer div h2 {
+  margin-bottom: .15rem;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+footer form input {
+  margin: .2rem 0;
+  background: transparent;
+  border: 1px solid navy;
+  border-radius: .2rem;
+  padding: .2rem;
+}
+
+footer form input[type='submit'] {
+  width: 50%;
+  margin: auto;
+  margin-top: .4rem;
+  background-color: midnightblue;
+  color: #eee;
+}
+
+footer .copyright {
+  text-align: center;
+  margin: 0 -1.2rem;
+  padding: .5rem;
+}
+
+footer .copyright a {
+  text-decoration: none;
+  color: navy;
+}
+/*# sourceMappingURL=footer.css.map */

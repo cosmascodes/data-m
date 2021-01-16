@@ -1,0 +1,17 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+
+#about{
+    padding: 1.2rem;
+    text-align: center;
+    h1{
+        margin-bottom: 1.2rem;
+    }
+    p{
+        margin-bottom: 1.2rem;
+    }
+    button{
+        border-color: $bgcolor;
+    }
+}

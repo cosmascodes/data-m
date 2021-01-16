@@ -1,0 +1,44 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+
+footer{
+    background-color: rgb(15, 15, 15);
+    padding: 1.2rem;
+    padding-bottom: 0;
+    color: $color;
+    div{
+        margin: 1.2rem 0;
+        h2{
+            margin-bottom: .15rem;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        input{
+            margin: .2rem 0;
+            background: transparent;
+            border: 1px solid $bgcolor;
+            border-radius: .2rem;
+            padding: .2rem;
+        }
+        input[type='submit']{
+            width: 50%;
+            margin: auto;
+            margin-top: .4rem;
+            background-color: $theme;
+            color: $color;
+        }
+    }
+    .copyright{
+        text-align: center;
+        margin: 0 -1.2rem;
+        padding: .5rem;
+        a{
+            text-decoration: none;
+            color: $bgcolor;
+        }
+    }
+}

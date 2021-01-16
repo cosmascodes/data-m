@@ -1,0 +1,26 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+
+#landing{
+    background-color: $bgcolor;
+    background-image: url('../../assets/Improves-Services-SVG.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 12rem;
+    background-position-y: 7rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color;
+    h1{
+        font-size: 1.2em;
+        margin-bottom: .2em;
+    }
+    p{
+        font-size: .8em;
+        margin-bottom: .6em;
+    }
+}
