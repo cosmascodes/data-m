@@ -27,7 +27,7 @@ $desktop:1024px;
     align-items: center;
     color: $color;
     @include desktop{
-        min-height: 90vh;
+        min-height: 80vh;
     }
     h1{
         font-size: 1.2em;
