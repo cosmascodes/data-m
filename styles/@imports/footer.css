@@ -5,6 +5,16 @@ footer {
   color: #eee;
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: .5em;
+  }
+}
+
 footer div {
   margin: 1.2rem 0;
 }
@@ -40,10 +50,22 @@ footer form input[type='submit'] {
   color: #eee;
 }
 
+@media (min-width: 768px) {
+  footer form input[type='submit'] {
+    margin-left: 0;
+  }
+}
+
 footer .copyright {
   text-align: center;
   margin: 0 -1.2rem;
   padding: .5rem;
+}
+
+@media (min-width: 768px) {
+  footer .copyright {
+    grid-column: span 3;
+  }
 }
 
 footer .copyright a {

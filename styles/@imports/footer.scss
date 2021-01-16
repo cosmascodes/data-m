@@ -2,11 +2,34 @@ $theme:rgb(25,25,112);
 $bgcolor: rgb(0,0,128);
 $color: #eee;
 
+// responsive
+
+$tablet:768px;
+$desktop:840px;
+
+@mixin tablet {
+    @media(min-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin desktop {
+    @media(min-width: #{$desktop}){
+        @content
+    }
+}
+
+
 footer{
     background-color: rgb(15, 15, 15);
     padding: 1.2rem;
     padding-bottom: 0;
     color: $color;
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: .5em;
+    }
     div{
         margin: 1.2rem 0;
         h2{
@@ -30,12 +53,18 @@ footer{
             margin-top: .4rem;
             background-color: $theme;
             color: $color;
+            @include tablet{
+                margin-left: 0;
+            }
         }
     }
     .copyright{
         text-align: center;
         margin: 0 -1.2rem;
         padding: .5rem;
+        @include tablet{
+            grid-column: span 3;
+        }
         a{
             text-decoration: none;
             color: $bgcolor;
