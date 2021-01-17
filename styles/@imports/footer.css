@@ -21,7 +21,7 @@ footer div {
 }
 
 footer div h2 {
-  margin-bottom: .15rem;
+  margin-bottom: .5rem;
 }
 
 footer form {
@@ -71,6 +71,6 @@ footer .copyright {
 
 footer .copyright a {
   text-decoration: none;
-  color: navy;
+  color: #eee;
 }
 /*# sourceMappingURL=footer.css.map */
