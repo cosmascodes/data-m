@@ -13,7 +13,17 @@
         <h1>
             DSEA
         </h1>
-        <label>
+        <input type="checkbox" id="menu-trigger">
+        <nav class="menu" id='menu'>
+            <ul>
+                <li>Home</li>
+                <li>Learn</li>
+                <li>A.D.S.A</li>
+                <li>Bootcamp</li>
+                <li>Community</li>
+            </ul>
+        </nav>
+        <label for="menu-trigger" class="menu-trigger-label">
             <span></span>
         </label>
     </header>
@@ -237,6 +247,7 @@
     
 
     <!-- Scripts -->
+    <script src="./js/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
