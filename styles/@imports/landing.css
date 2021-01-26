@@ -57,5 +57,14 @@
 
 #landing button {
   font-size: .6em;
+  outline: none;
+}
+
+#landing button:hover {
+  cursor: pointer;
+  background-color: #eee;
+  color: #222;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 /*# sourceMappingURL=landing.css.map */

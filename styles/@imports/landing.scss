@@ -53,5 +53,12 @@ $desktop:1024px;
     }
     button{
         font-size: .6em;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: $color;
+            color: #222;
+            transition: all .3s ease-in;
+        }
     }
 }

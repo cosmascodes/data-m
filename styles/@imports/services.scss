@@ -60,6 +60,13 @@ $desktop:1024px;
         button{
             border-color: #fff;
             color: #fff;
+            outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: $color;
+            color: #222;
+            transition: all .3s ease-in;
+        }
         }
     }
 
@@ -78,6 +85,16 @@ $desktop:1024px;
                 box-shadow: 0 0 25px -11px $color;
                 margin-bottom: .5rem;
                 border: 1px solid $bgcolor;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .path-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
             }
             @include tablet{
                 display: grid;
