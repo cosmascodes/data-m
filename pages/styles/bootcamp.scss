@@ -1,0 +1,97 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+
+*,*::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body,html{
+    height: 100%;
+}
+html{
+    font-size: calc(1em + 1vw);
+}
+section{
+    padding: 1.2rem;
+}
+
+#bootcamp-barner{
+    text-align: center;
+    padding: 4rem 1.2rem;
+    background-color: $bgcolor;
+    color: $color;
+    p{
+        margin: 1em 0;
+    }
+    button{
+        margin-top: 2em;
+        font-size: inherit;
+        padding: .4rem .8rem;
+        border: 2px solid $color;
+        background-color: transparent;
+        border-radius: .4rem;
+        color: $color;
+    }
+}
+.curriculum-barner{
+    text-align: center;
+    padding: 1.2rem 0;
+    background-color: $color;
+    button{
+        font-size: .8rem;
+        color: $bgcolor;
+        padding: .4rem .8rem;
+        border: 2px solid $theme;
+        background-color: transparent;
+        margin-top: .5rem;
+    }
+}
+#cards{
+    article{
+        margin: 1rem 0;
+        h2{
+            margin-bottom: .8rem;
+            color: $bgcolor;
+        }
+        .card{
+            span{
+                color: rgb(230, 214, 4);
+            }
+            border: 2px solid $theme;
+            border-left: .3rem solid $bgcolor;
+            margin: .3rem 0;
+            padding: .4rem;
+            border-bottom-left-radius: .2rem;
+            border-top-left-radius: .2rem;
+        }
+    }
+}
+
+#other{
+    background-color: $color;
+    text-align: center;
+    h2{
+        color: $theme;
+    }
+    ul{
+        text-align: left;
+        list-style: none;
+        li{
+            margin: .2rem 0;
+        }
+    }
+    button{
+        background-color: transparent;
+        padding: .4rem .8rem;
+        font-size: .8rem;
+        border-radius: .2rem;
+        outline: 0;
+        border: 2px solid $bgcolor;
+        color: $theme;
+        margin: 1rem 0;
+    }
+}

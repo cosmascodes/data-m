@@ -1,0 +1,107 @@
+*, *::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+section {
+  padding: 1.2rem;
+}
+
+#bootcamp-barner {
+  text-align: center;
+  padding: 4rem 1.2rem;
+  background-color: navy;
+  color: #eee;
+}
+
+#bootcamp-barner p {
+  margin: 1em 0;
+}
+
+#bootcamp-barner button {
+  margin-top: 2em;
+  font-size: inherit;
+  padding: .4rem .8rem;
+  border: 2px solid #eee;
+  background-color: transparent;
+  border-radius: .4rem;
+  color: #eee;
+}
+
+.curriculum-barner {
+  text-align: center;
+  padding: 1.2rem 0;
+  background-color: #eee;
+}
+
+.curriculum-barner button {
+  font-size: .8rem;
+  color: navy;
+  padding: .4rem .8rem;
+  border: 2px solid midnightblue;
+  background-color: transparent;
+  margin-top: .5rem;
+}
+
+#cards article {
+  margin: 1rem 0;
+}
+
+#cards article h2 {
+  margin-bottom: .8rem;
+  color: navy;
+}
+
+#cards article .card {
+  border: 2px solid midnightblue;
+  border-left: 0.3rem solid navy;
+  margin: .3rem 0;
+  padding: .4rem;
+  border-bottom-left-radius: .2rem;
+  border-top-left-radius: .2rem;
+}
+
+#cards article .card span {
+  color: #e6d604;
+}
+
+#other {
+  background-color: #eee;
+  text-align: center;
+}
+
+#other h2 {
+  color: midnightblue;
+}
+
+#other ul {
+  text-align: left;
+  list-style: none;
+}
+
+#other ul li {
+  margin: .2rem 0;
+}
+
+#other button {
+  background-color: transparent;
+  padding: .4rem .8rem;
+  font-size: .8rem;
+  border-radius: .2rem;
+  outline: 0;
+  border: 2px solid navy;
+  color: midnightblue;
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=bootcamp.css.map */
