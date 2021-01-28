@@ -1,6 +1,7 @@
 $theme:rgb(25,25,112);
 $bgcolor: rgb(0,0,128);
 $color: #eee;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 *,*::before,::after{
     box-sizing: border-box;
@@ -14,6 +15,7 @@ body,html{
 }
 html{
     font-size: calc(1em + 1vw);
+    font-family: 'Open Sans', sans-serif;
 }
 section{
     padding: 1.2rem;
