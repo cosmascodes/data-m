@@ -392,6 +392,10 @@ section {
 
 @media screen and (min-width: 758px) {
   #duration .grid-wrap {
+    background-image: url("../../assets/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 7rem;
     text-align: center;
   }
 }

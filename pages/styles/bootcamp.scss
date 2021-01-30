@@ -310,6 +310,10 @@ section{
     }
     .grid-wrap{
         @include tablet{
+            background-image: url('../../assets/pattern-quotes.svg');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-position-x: 7rem;
             text-align: center;
         }
         @include desktop{
