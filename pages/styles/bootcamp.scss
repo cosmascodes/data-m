@@ -1,5 +1,5 @@
-$theme:rgb(25,25,112);
-$bgcolor: rgb(0,0,128);
+$theme:#191970;
+$bgcolor: #000080;
 $color: #eee;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
@@ -260,6 +260,12 @@ section{
     }
 }
 #rewards{
+    @include tablet{
+        background-image: url('../../assets/illustration-1.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
     .grid{
         @include tablet{
             display: grid;
