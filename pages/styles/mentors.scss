@@ -41,4 +41,50 @@ html{
 }
 section{
     padding: 1.2rem;
+    min-height: 50vh;
+    &:nth-child(even){
+        background-color: $color;
+    }
+    h1{
+        text-align: center;
+        color: $theme;
+        margin: 1rem 0;
+    }
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+        @include tablet{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include desktop{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .image{
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: top;
+            border-radius: 50%;
+            border: 3px solid $theme;
+            @include tablet{
+                width: 150px;
+                height: 150px;
+            }
+            @include desktop{
+                width: 200px;
+                height: 200px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+// Main
+#landing{
+    height: calc(100vh - 70px);
+    background-color: $bgcolor;
+}
+#mentors{
+    background: white;
 }

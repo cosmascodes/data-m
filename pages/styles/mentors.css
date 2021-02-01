@@ -18,5 +18,72 @@ html {
 
 section {
   padding: 1.2rem;
+  min-height: 50vh;
+}
+
+section:nth-child(even) {
+  background-color: #eee;
+}
+
+section h1 {
+  text-align: center;
+  color: midnightblue;
+  margin: 1rem 0;
+}
+
+section div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 15px;
+}
+
+@media screen and (min-width: 758px) {
+  section div {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  section div {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+section div .image {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  border: 3px solid midnightblue;
+}
+
+@media screen and (min-width: 758px) {
+  section div .image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  section div .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+  }
+}
+
+#landing {
+  height: calc(100vh - 70px);
+  background-color: navy;
+}
+
+#mentors {
+  background: white;
 }
 /*# sourceMappingURL=mentors.css.map */
