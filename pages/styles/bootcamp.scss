@@ -194,13 +194,11 @@ section{
 #requirement{
         text-align: center;
         clip-path: polygon(0% 0%,100% 0%,100% 90%, 0% 100%);
-        @include tablet{
-            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 50%,rgba(0, 0, 0, 0.8) 50%),url('../../assets/ab.jpg');
-            background-size: cover;
-            background-position: bottom;
-            background-attachment: fixed;
-            color: $color;
-        }
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 50%,rgba(0, 0, 0, 0.8) 50%),url('../../assets/ab.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+        color: $color;
         h3{
             margin-bottom: .5rem;
         }
