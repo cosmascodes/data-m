@@ -22,7 +22,8 @@ header{
     display: flex;
     padding: 0 1.2rem;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    width: 100%;
     @include tablet{
         padding: 0 0.8rem;
     }

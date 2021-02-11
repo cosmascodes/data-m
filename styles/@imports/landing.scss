@@ -23,14 +23,14 @@ $desktop:1024px;
     background-repeat: no-repeat;
     background-position-x: 12rem;
     background-position-y: 7rem;
-    height: 50vh;
+    height:  calc(50vh + 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $color;
     @include desktop{
-        min-height: 80vh;
+        min-height: 100vh;
         background-size: cover;
         background-position-x: calc(100% + 14rem);
         background-position-y: -4rem;
