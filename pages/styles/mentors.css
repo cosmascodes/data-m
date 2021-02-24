@@ -17,7 +17,7 @@ html {
 }
 
 #link {
-  color: midnightblue;
+  color: navy;
 }
 
 section {
@@ -87,8 +87,8 @@ section div .image {
   background-color: navy;
   background-image: url("../../assets/bg.svg");
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position-x: 120%;
+  background-size: 50%;
+  background-position-x: 110%;
   background-position-y: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,6 +115,8 @@ section div .image {
 }
 
 #landing #intro button {
+  outline: none;
+  cursor: pointer;
   font-size: 24px;
   margin-top: .8rem;
   border: transparent;
@@ -125,9 +127,67 @@ section div .image {
 }
 
 #mentors {
-  background: url("/assets/mentors/mentors.svg");
+  background-image: url("/assets/mentor.svg");
   background-repeat: no-repeat;
-  background-size: 2rem;
-  background-position-y: 8rem;
+  background-size: 8rem;
+  background-position-y: bottom;
+  min-height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+}
+
+#mentors .mtext {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+#mentors .mpics {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#mentors .mpics .mentor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 1.2rem;
+}
+
+#mentors .mpics .mentor .image {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  border: 3px solid midnightblue;
+}
+
+#mentors .mpics .mentor p, #mentors .mpics .mentor article {
+  font-size: .5rem;
+}
+
+#mentors .mpics .mentor p {
+  color: #cec000;
+}
+
+#mentors .mpics .mentor article {
+  background: url("../../assets/pattern-quotes.svg");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  padding: .4rem;
 }
 /*# sourceMappingURL=mentors.css.map */

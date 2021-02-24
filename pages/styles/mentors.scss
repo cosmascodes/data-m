@@ -40,7 +40,7 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 #link{
-    color: $theme;
+    color: $bgcolor;
 }
 section{
     padding: 1.2rem;
@@ -89,8 +89,8 @@ section{
     background-color: $bgcolor;
     background-image: url('../../assets/bg.svg');
     background-repeat: no-repeat;
-    background-size: 60%;
-    background-position-x: 120%;
+    background-size: 50%;
+    background-position-x: 110%;
     background-position-y: 70px;
     display: flex;
     align-items: flex-end;
@@ -107,6 +107,8 @@ section{
             font-size: 1.3rem;
         }
         button{
+            outline: none;
+            cursor: pointer;
             font-size: 24px;
             margin-top: .8rem;
             border: transparent;
@@ -118,8 +120,46 @@ section{
     }
 }
 #mentors{
-    background: url('/assets/mentors/mentors.svg');
+    background-image: url('/assets/mentor.svg');
     background-repeat: no-repeat;
-    background-size: 2rem;
-    background-position-y: 8rem;
+    background-size: 8rem;
+    background-position-y: bottom;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    .mtext{
+        grid-column: 1/2;
+    }
+    .mpics{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .mentor{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 1rem 1.2rem;
+            .image{
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+                background-size: cover;
+                background-position: top;
+                border-radius: 50%;
+                border: 3px solid $theme;
+            }
+            p,article{
+                font-size: .5rem;
+            }
+            p{
+                color: #cec000;
+            }
+            article{
+                background: url('../../assets/pattern-quotes.svg');
+                background-size: 1.5rem;
+                background-repeat: no-repeat;
+                padding: .4rem;
+            }
+        }
+    }
 }
