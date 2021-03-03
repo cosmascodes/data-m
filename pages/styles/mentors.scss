@@ -45,13 +45,14 @@ html{
 section{
     padding: 1.2rem;
     min-height: 50vh;
-    &:nth-child(even){
-        background-color: $color;
-    }
     h1{
         text-align: center;
         color: $theme;
         margin: 1rem 0;
+    }    
+    .header{
+        height: 80px;
+        margin: 1.2rem auto;
     }
     div{
         display: grid;
@@ -122,13 +123,33 @@ section{
 #mentors{
     background-image: url('/assets/mentor.svg');
     background-repeat: no-repeat;
-    background-size: 8rem;
+    background-size: 18rem;
     background-position-y: bottom;
     min-height: 70vh;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    .header{
+        background: url('../../assets/SVG/mentorheader.svg') no-repeat;
+        background-position: right;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
     .mtext{
         grid-column: 1/2;
+        text-align: right;
+        p{
+            font-size: .5rem;
+            line-height: 1.75;
+        }
+        button{
+            border: 2px solid $bgcolor;
+            background-color: transparent;
+            cursor: pointer;
+            padding: .2rem .5rem;
+            border-radius: 2rem;
+            margin-top: 1.2rem;
+            color: $bgcolor;
+            outline: none;
+        }
     }
     .mpics{
         grid-column: 2/3;
@@ -136,11 +157,11 @@ section{
         grid-template-columns: repeat(2,1fr);
         .mentor{
             display: flex;
-            text-align: center;
+            text-align: right;
             flex-direction: column;
-            margin: 1rem 1.2rem;
+            margin: 0 1.2rem 1.2rem 1.2rem;
             .image{
-                margin: 0 auto;
+                margin-right: 0;
                 width: 100px;
                 height: 100px;
                 background-size: cover;
@@ -159,7 +180,16 @@ section{
                 background-size: 1.5rem;
                 background-repeat: no-repeat;
                 padding: .4rem;
+                padding-right: 0;
             }
         }
+    }
+    }
+}
+#educators{
+    .header{
+        background: url('../../assets/educheader.svg') no-repeat;        
+        background-position: left;
+        background-size: 45%;
     }
 }

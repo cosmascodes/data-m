@@ -25,14 +25,15 @@ section {
   min-height: 50vh;
 }
 
-section:nth-child(even) {
-  background-color: #eee;
-}
-
 section h1 {
   text-align: center;
   color: midnightblue;
   margin: 1rem 0;
+}
+
+section .header {
+  height: 80px;
+  margin: 1.2rem auto;
 }
 
 section div {
@@ -129,22 +130,47 @@ section div .image {
 #mentors {
   background-image: url("/assets/mentor.svg");
   background-repeat: no-repeat;
-  background-size: 8rem;
+  background-size: 18rem;
   background-position-y: bottom;
   min-height: 70vh;
+}
+
+#mentors .header {
+  background: url("../../assets/SVG/mentorheader.svg") no-repeat;
+  background-position: right;
+}
+
+#mentors .cont {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.5fr 2fr;
       grid-template-columns: 1.5fr 2fr;
 }
 
-#mentors .mtext {
+#mentors .cont .mtext {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  text-align: right;
 }
 
-#mentors .mpics {
+#mentors .cont .mtext p {
+  font-size: .5rem;
+  line-height: 1.75;
+}
+
+#mentors .cont .mtext button {
+  border: 2px solid navy;
+  background-color: transparent;
+  cursor: pointer;
+  padding: .2rem .5rem;
+  border-radius: 2rem;
+  margin-top: 1.2rem;
+  color: navy;
+  outline: none;
+}
+
+#mentors .cont .mpics {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -154,20 +180,20 @@ section div .image {
       grid-template-columns: repeat(2, 1fr);
 }
 
-#mentors .mpics .mentor {
+#mentors .cont .mpics .mentor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  text-align: right;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 1.2rem;
+  margin: 0 1.2rem 1.2rem 1.2rem;
 }
 
-#mentors .mpics .mentor .image {
-  margin: 0 auto;
+#mentors .cont .mpics .mentor .image {
+  margin-right: 0;
   width: 100px;
   height: 100px;
   background-size: cover;
@@ -176,18 +202,25 @@ section div .image {
   border: 3px solid midnightblue;
 }
 
-#mentors .mpics .mentor p, #mentors .mpics .mentor article {
+#mentors .cont .mpics .mentor p, #mentors .cont .mpics .mentor article {
   font-size: .5rem;
 }
 
-#mentors .mpics .mentor p {
+#mentors .cont .mpics .mentor p {
   color: #cec000;
 }
 
-#mentors .mpics .mentor article {
+#mentors .cont .mpics .mentor article {
   background: url("../../assets/pattern-quotes.svg");
   background-size: 1.5rem;
   background-repeat: no-repeat;
   padding: .4rem;
+  padding-right: 0;
+}
+
+#educators .header {
+  background: url("../../assets/educheader.svg") no-repeat;
+  background-position: left;
+  background-size: 45%;
 }
 /*# sourceMappingURL=mentors.css.map */
