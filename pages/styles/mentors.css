@@ -312,11 +312,19 @@ section .div {
   width: 100%;
   margin: .5rem;
   text-align: center;
+  -webkit-box-shadow: 0 0 25px -12px #eee;
+          box-shadow: 0 0 25px -12px #eee;
+  padding: 1rem .6rem;
+  border-radius: .5rem;
 }
 
 @media screen and (min-width: 758px) {
   #technicians .cont .item {
     width: 30vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    border-radius: 0;
   }
 }
 
@@ -387,13 +395,22 @@ section .div {
 
 #sponsors .sponsor-grid .cont .item {
   width: 100%;
-  margin: .5rem;
   text-align: center;
+  margin: .5rem 0;
+  -webkit-box-shadow: 0 0 25px -12px #eee;
+          box-shadow: 0 0 25px -12px #eee;
+  padding: 1rem .6rem;
+  border-radius: .5rem;
 }
 
 @media screen and (min-width: 758px) {
   #sponsors .sponsor-grid .cont .item {
     width: 20vw;
+    margin: .5rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    border-radius: 0;
   }
 }
 
