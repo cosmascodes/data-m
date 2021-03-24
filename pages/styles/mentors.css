@@ -36,7 +36,7 @@ section .header {
   margin: 1.2rem auto;
 }
 
-section div {
+section .div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -45,41 +45,16 @@ section div {
 }
 
 @media screen and (min-width: 758px) {
-  section div {
+  section .div {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 1020px) {
-  section div {
+  section .div {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-section div .image {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-position: top;
-  border-radius: 50%;
-  border: 3px solid midnightblue;
-}
-
-@media screen and (min-width: 758px) {
-  section div .image {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media screen and (min-width: 1020px) {
-  section div .image {
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
   }
 }
 
@@ -221,6 +196,215 @@ section div .image {
 #educators .header {
   background: url("../../assets/educheader.svg") no-repeat;
   background-position: left;
-  background-size: 45%;
+  background-size: 40%;
+}
+
+#educators .cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.2fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
+  min-height: 70vh;
+}
+
+#educators .cont .epics {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#educators .cont .epics .educator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#educators .cont .epics .educator div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#educators .cont .epics .educator p {
+  line-height: .5;
+  font-size: .5rem;
+}
+
+#educators .cont .epics .educator button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: transparent;
+  border: 2px solid navy;
+  padding: .2rem .5rem .2rem .2rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#educators .cont .epics .educator .pic {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #cec000;
+  margin-left: .45rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#educators .cont #etext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding-left: 1.2rem;
+  text-align: right;
+}
+
+#educators .cont #etext p {
+  font-size: .55rem;
+}
+
+#technicians .header {
+  background: url("../../assets/educheader.svg") no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+#technicians p {
+  font-size: .6rem;
+  background: url("/assets/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+}
+
+#technicians .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 758px) {
+  #technicians .cont {
+    padding: 0 6rem;
+  }
+}
+
+#technicians .cont .item {
+  width: 100%;
+  margin: .5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 758px) {
+  #technicians .cont .item {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #technicians .cont .item {
+    width: 20vw;
+  }
+}
+
+#technicians .cont .item .picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #cec000;
+  margin: .5rem auto;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sponsors .header {
+  background: url("../../assets/SVG/mentorheader.svg") no-repeat;
+  background-position: right;
+  background-size: 40%;
+}
+
+#sponsors p {
+  font-size: .6rem;
+  background: url("/assets/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+}
+
+@media screen and (min-width: 758px) {
+  #sponsors .sponsor-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #sponsors .sponsor-grid {
+    -ms-grid-columns: 1fr 2.5fr;
+        grid-template-columns: 1fr 2.5fr;
+  }
+}
+
+#sponsors .sponsor-grid .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 758px) {
+  #sponsors .sponsor-grid .cont {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+#sponsors .sponsor-grid .cont .item {
+  width: 100%;
+  margin: .5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 758px) {
+  #sponsors .sponsor-grid .cont .item {
+    width: 20vw;
+  }
+}
+
+#sponsors .sponsor-grid .cont .item .picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #cec000;
+  margin: .5rem auto;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=mentors.css.map */

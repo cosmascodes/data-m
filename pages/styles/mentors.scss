@@ -54,7 +54,7 @@ section{
         height: 80px;
         margin: 1.2rem auto;
     }
-    div{
+   .div{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 15px;
@@ -63,24 +63,6 @@ section{
         }
         @include desktop{
             grid-template-columns: repeat(4, 1fr);
-        }
-        .image{
-            margin: 0 auto;
-            width: 100px;
-            height: 100px;
-            background-size: cover;
-            background-position: top;
-            border-radius: 50%;
-            border: 3px solid $theme;
-            @include tablet{
-                width: 150px;
-                height: 150px;
-            }
-            @include desktop{
-                width: 200px;
-                height: 200px;
-                border-radius: 8px;
-            }
         }
     }
 }
@@ -190,6 +172,144 @@ section{
     .header{
         background: url('../../assets/educheader.svg') no-repeat;        
         background-position: left;
-        background-size: 45%;
+        background-size: 40%;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        min-height: 70vh;
+        .epics{
+            grid-column: 1/2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .educator{
+                display: flex;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                }
+                p{
+                    line-height: .5;
+                    font-size: .5rem;
+                }
+                button{
+                    width: fit-content;
+                    background: transparent;
+                    border: 2px solid rgb(0,0,128);
+                    padding: .2rem .5rem .2rem .2rem;
+                    border-radius: 0 2rem 2rem 0;
+                }
+                .pic{
+                    width: 100px;
+                    height: 100px;
+                    border: 2px solid #cec000;
+                    margin-left: .45rem;
+                    border-radius: 50%;
+                    background-size: cover;
+                    background-position: top;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        #etext{
+            display: flex;
+            flex-direction: column;
+            grid-column: 2/3;
+            padding-left: 1.2rem;
+            text-align: right;
+            p{
+                font-size: .55rem;
+            }
+        }
+    }
+}
+#technicians{
+    .header{
+        background: url('../../assets/educheader.svg') no-repeat;        
+        background-position: center;
+        background-size: 40%;
+    }
+    p{
+        font-size: .6rem;
+        background: url('/assets/pattern-quotes.svg');
+        background-repeat: no-repeat;
+        background-size: 1.2rem;
+    }
+    .cont{
+        display: flex;
+        flex-wrap: wrap;
+        @include tablet{
+            padding: 0 6rem;
+        }
+        .item{
+            width: 100%;
+            margin: .5rem;
+            text-align: center;
+            @include tablet{
+                width: 30vw;
+            }
+            @include desktop {
+                width: 20vw;
+            }
+            .picture{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid #cec000;
+                margin: .5rem auto;
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+#sponsors{
+    .header{
+        background: url('../../assets/SVG/mentorheader.svg') no-repeat;        
+        background-position: right;
+        background-size: 40%;
+    }
+    p{
+        font-size: .6rem;
+        background: url('/assets/pattern-quotes.svg');
+        background-repeat: no-repeat;
+        background-size: 1.2rem;
+    }
+    .sponsor-grid{
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        @include desktop{
+            grid-template-columns: 1fr 2.5fr;
+        }
+        .cont{
+            @include tablet{                
+                grid-column: 2/3;
+            }
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            .item{
+                width: 100%;
+                margin: .5rem;
+                text-align: center;
+                @include tablet{
+                    width: 20vw;
+                }
+                .picture{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border: 2px solid #cec000;
+                    margin: .5rem auto;
+                    background-position: top;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
     }
 }
