@@ -68,7 +68,6 @@ section{
 }
 // Main
 #landing{
-    height: 100vh;
     background-color: $bgcolor;
     background-image: url('../../assets/bg.svg');
     background-repeat: no-repeat;
@@ -81,6 +80,7 @@ section{
     @include tablet{
         background-size: 50%;
         align-items: flex-end;
+        height: 100vh;
     }
     #intro{     
         margin-bottom: 2rem;
