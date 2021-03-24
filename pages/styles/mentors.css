@@ -251,6 +251,11 @@ section .div {
   display: -ms-flexbox;
   display: flex;
   margin: .5rem 0;
+  -webkit-box-shadow: 0 0 25px -7px #eee;
+          box-shadow: 0 0 25px -7px #eee;
+  width: 100%;
+  padding: .5rem;
+  padding-left: 1rem;
 }
 
 #educators .cont .epics .educator div {
