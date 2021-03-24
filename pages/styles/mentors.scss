@@ -103,7 +103,9 @@ section{
     }
 }
 #mentors{
-    background-image: url('/assets/mentor.svg');
+    @include tablet{
+        background-image: url('/assets/mentor.svg');
+    }
     background-repeat: no-repeat;
     background-size: 18rem;
     background-position-y: bottom;
@@ -113,11 +115,15 @@ section{
         background-position: right;
     }
     .cont{
-        display: grid;
-        grid-template-columns: 1.5fr 2fr;
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1.5fr 2fr;
+        }
     .mtext{
         grid-column: 1/2;
-        text-align: right;
+        @include tablet{
+            text-align: right;
+        }
         p{
             font-size: .5rem;
             line-height: 1.75;
@@ -134,15 +140,22 @@ section{
         }
     }
     .mpics{
+        margin-top: 1rem;
         grid-column: 2/3;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         .mentor{
             display: flex;
-            text-align: right;
             flex-direction: column;
-            margin: 0 1.2rem 1.2rem 1.2rem;
+            margin-bottom: 1rem;
+            @include tablet{
+                margin: 0 1.2rem 1.2rem 1.2rem;
+            }
             .image{
+                @include mobile{
+                    margin: 0 auto;
+                    margin-bottom: .5rem;
+                }
                 margin-right: 0;
                 width: 100px;
                 height: 100px;
@@ -161,8 +174,10 @@ section{
                 background: url('../../assets/pattern-quotes.svg');
                 background-size: 1.5rem;
                 background-repeat: no-repeat;
-                padding: .4rem;
                 padding-right: 0;
+                @include tablet{
+                    padding: .4rem;
+                }
             }
         }
     }
@@ -200,6 +215,9 @@ section{
                 padding: .5rem;
                 padding-left: 1rem;
                 border-radius: .5rem;
+                @include tablet{
+                    box-shadow: none;
+                }
                 div{
                     display: flex;
                     flex-direction: column;
