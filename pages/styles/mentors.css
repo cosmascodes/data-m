@@ -65,7 +65,6 @@ section .div {
   background-size: 80%;
   background-position: center;
   background-position-x: 110%;
-  background-position-y: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
