@@ -172,7 +172,9 @@ section{
     .header{
         background: url('../../assets/educheader.svg') no-repeat;        
         background-position: left;
-        background-size: 40%;
+        @include tablet{
+            background-size: 40%;
+        }
     }
     .cont{
         display: grid;
@@ -228,7 +230,9 @@ section{
     .header{
         background: url('../../assets/educheader.svg') no-repeat;        
         background-position: center;
-        background-size: 40%;
+        @include tablet{
+            background-size: 40%;
+        }
     }
     p{
         font-size: .6rem;
@@ -275,7 +279,9 @@ section{
     .header{
         background: url('../../assets/SVG/mentorheader.svg') no-repeat;        
         background-position: right;
-        background-size: 40%;
+        @include tablet{
+            background-size: 40%;
+        }
     }
     p{
         font-size: .6rem;

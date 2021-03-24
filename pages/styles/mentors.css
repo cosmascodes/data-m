@@ -196,7 +196,12 @@ section .div {
 #educators .header {
   background: url("../../assets/educheader.svg") no-repeat;
   background-position: left;
-  background-size: 40%;
+}
+
+@media screen and (min-width: 758px) {
+  #educators .header {
+    background-size: 40%;
+  }
 }
 
 #educators .cont {
@@ -284,7 +289,12 @@ section .div {
 #technicians .header {
   background: url("../../assets/educheader.svg") no-repeat;
   background-position: center;
-  background-size: 40%;
+}
+
+@media screen and (min-width: 758px) {
+  #technicians .header {
+    background-size: 40%;
+  }
 }
 
 #technicians p {
@@ -348,7 +358,12 @@ section .div {
 #sponsors .header {
   background: url("../../assets/SVG/mentorheader.svg") no-repeat;
   background-position: right;
-  background-size: 40%;
+}
+
+@media screen and (min-width: 758px) {
+  #sponsors .header {
+    background-size: 40%;
+  }
 }
 
 #sponsors p {
