@@ -293,7 +293,7 @@ section{
         display: flex;
         flex-wrap: wrap;
         @include tablet{
-            padding: 0 6rem;
+            padding: 0 .6rem;
         }
         .item{
             width: 100%;
@@ -309,7 +309,7 @@ section{
                 border-radius: 0;
             }
             @include desktop {
-                width: 20vw;
+                width: 25vw;
             }
             .picture{
                 width: 100px;
