@@ -197,7 +197,6 @@ section .div {
 
 @media screen and (max-width: 758px) {
   #mentors .cont .mpics .mentor .image {
-    margin: 0 auto;
     margin-bottom: .5rem;
   }
 }
