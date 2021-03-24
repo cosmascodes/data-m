@@ -256,6 +256,7 @@ section .div {
   width: 100%;
   padding: .5rem;
   padding-left: 1rem;
+  border-radius: .5rem;
 }
 
 #educators .cont .epics .educator div {
