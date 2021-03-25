@@ -87,6 +87,7 @@ header .menu ul {
 }
 
 header .menu ul li {
+  font-weight: bold;
   text-transform: uppercase;
   margin: .8em 0;
   padding: .5em 0;
