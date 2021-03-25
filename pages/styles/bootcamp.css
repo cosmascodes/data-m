@@ -172,21 +172,40 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths #path-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #learning-paths #path-container #card {
+  width: 100%;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 25px -7px #dfdfdf;
           box-shadow: 0 0 25px -7px #dfdfdf;
   overflow: hidden;
-  margin: 0 .4rem;
-  width: 360px;
+  margin: .5rem .4rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 2fr .2fr .5fr .2fr;
       grid-template-rows: 2fr .2fr .5fr .2fr;
   -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s;
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths #path-container #card {
+    width: 360px;
+  }
 }
 
 #learning-paths #path-container #card:hover {
