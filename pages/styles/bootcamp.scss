@@ -157,7 +157,7 @@ section{
         justify-content: center;
         flex-direction: column;
         @include tablet{
-            flex-direction: column;
+            flex-direction: row;
         }
         #card{
             width: 100%;
@@ -200,7 +200,7 @@ section{
             .unit-title{
                 padding: 0 .5rem;
                 p{
-                    font-size: .8rem;
+                    font-size: .6rem;
                 }
             }
             .bottom{
