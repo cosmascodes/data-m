@@ -74,7 +74,6 @@ main{
     #path-container{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-        justify-content: center;
         #card{
             background-color: #fff;
             margin: .8rem 0;

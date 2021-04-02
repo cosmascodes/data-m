@@ -72,9 +72,6 @@ main {
   display: grid;
   -ms-grid-columns: (minmax(360px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #learning-paths #path-container #card {
