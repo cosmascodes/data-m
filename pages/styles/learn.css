@@ -49,6 +49,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: .8rem 0;
 }
 
 @media screen and (min-width: 758px) {
