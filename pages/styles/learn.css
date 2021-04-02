@@ -137,6 +137,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: .5rem;
+  font-size: .8rem;
 }
 
 #learning-paths #path-container #card .instructor img {
