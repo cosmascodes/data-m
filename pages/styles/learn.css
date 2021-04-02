@@ -39,7 +39,7 @@ main {
   padding-top: 70px;
 }
 
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 1020px) {
   #learning-paths {
     padding: 0 8rem;
   }
@@ -70,8 +70,13 @@ main {
 #learning-paths #path-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(360px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths #path-container {
+    -ms-grid-columns: (minmax(12em, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
 }
 
 #learning-paths #path-container #card {

@@ -57,7 +57,7 @@ main{
 }
 
 #learning-paths{
-    @include tablet{
+    @include desktop{
         padding: 0 8rem;
     }
     .title{
@@ -73,7 +73,9 @@ main{
     }
     #path-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        @include tablet{
+            grid-template-columns: repeat(auto-fit, minmax( 12em, 1fr));
+        }
         #card{
             background-color: #fff;
             margin: .8rem 0;
