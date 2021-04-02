@@ -153,11 +153,12 @@ main {
 }
 
 #learning-paths #path-container #card .unit-title {
-  padding: .2rem .5rem;
+  padding: .4rem .5rem;
 }
 
 #learning-paths #path-container #card .bottom {
   padding: .5rem;
+  padding-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
