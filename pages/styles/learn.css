@@ -111,7 +111,13 @@ main {
 }
 
 #learning-paths #path-container #card p {
-  font-size: .45rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths #path-container #card p {
+    font-size: .6rem;
+  }
 }
 
 #learning-paths #path-container #card #bg {
@@ -148,10 +154,6 @@ main {
 
 #learning-paths #path-container #card .unit-title {
   padding: 0 .5rem;
-}
-
-#learning-paths #path-container #card .unit-title p {
-  font-size: .6rem;
 }
 
 #learning-paths #path-container #card .bottom {

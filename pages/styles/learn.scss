@@ -93,9 +93,12 @@ main{
                 transform: translateY(-10px);
                 box-shadow: 0 5px 25px -5px rgb(167, 167, 167);
                 transition: all ease-in-out .3s;
-            }       
+            }    
             p{
-                font-size: .45rem;
+                font-size: 1rem;
+                @include tablet{
+                    font-size: .6rem;
+                }
             }
             #bg{
                 min-height: 190px;
@@ -117,9 +120,6 @@ main{
             }
             .unit-title{
                 padding: 0 .5rem;
-                p{
-                    font-size: .6rem;
-                }
             }
             .bottom{
                 padding: .5rem;
