@@ -146,10 +146,10 @@ main {
 }
 
 #learning-paths #path-container #card .instructor img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-right: .2rem;
+  margin-right: .5rem;
 }
 
 #learning-paths #path-container #card .unit-title {
