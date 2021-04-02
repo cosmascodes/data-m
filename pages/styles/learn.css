@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*, *::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: .5rem 1.2rem;
+}
+
+header {
+  height: 70px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+main {
+  padding-top: 70px;
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths {
+    padding: 0 8rem;
+  }
+}
+
+#learning-paths .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths .title {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 0 .5rem;
+  }
+}
+
+#learning-paths .title h1 {
+  font-size: 1.4rem;
+}
+
+#learning-paths #path-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(360px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#learning-paths #path-container #card {
+  background-color: #fff;
+  margin: .8rem 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px -5px #dfdfdf;
+          box-shadow: 0 0 25px -5px #dfdfdf;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr .2fr .5fr .2fr;
+      grid-template-rows: 2fr .2fr .5fr .2fr;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  min-height: 420px;
+}
+
+@media screen and (min-width: 758px) {
+  #learning-paths #path-container #card {
+    margin: .8rem .5rem;
+  }
+}
+
+#learning-paths #path-container #card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 5px 25px -5px #a7a7a7;
+          box-shadow: 0 5px 25px -5px #a7a7a7;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+#learning-paths #path-container #card p {
+  font-size: .45rem;
+}
+
+#learning-paths #path-container #card #bg {
+  min-height: 190px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-color: #e6d604;
+}
+
+#learning-paths #path-container #card .instructor {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+#learning-paths #path-container #card .instructor img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: .2rem;
+}
+
+#learning-paths #path-container #card .unit-title {
+  padding: 0 .5rem;
+}
+
+#learning-paths #path-container #card .unit-title p {
+  font-size: .6rem;
+}
+
+#learning-paths #path-container #card .bottom {
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#learning-paths #path-container #card .bottom button {
+  font-size: 16px;
+  padding: .2rem;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+#learning-paths #path-container #card .bottom button:hover {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  background: #eee;
+  border: 2px solid #eee;
+}
+/*# sourceMappingURL=learn.css.map */

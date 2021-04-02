@@ -1,0 +1,143 @@
+$theme:#191970;
+$bgcolor: #000080;
+$color: #eee;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,*::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+$tablet: 758px;
+$desktop: 1020px;
+@mixin tablet {
+    @media screen and (min-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$desktop}){
+        @content
+    }
+}
+
+body,html{
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: calc(1em + 1vw);
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    padding: .5rem 1.2rem;
+}
+header{
+    height: 70px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+main{
+    padding-top: 70px;
+}
+
+#learning-paths{
+    @include tablet{
+        padding: 0 8rem;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        @include tablet{
+            justify-content: left;
+            margin: 0 .5rem;
+        }
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+    #path-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        justify-content: center;
+        #card{
+            background-color: #fff;
+            margin: .8rem 0;
+            border-radius: 5px;
+            box-shadow: 0 0 25px -5px rgb(223, 223, 223);
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 2fr .2fr .5fr .2fr;
+            transition: all ease-in-out .3s;
+            min-height: 420px;
+            @include tablet{
+                margin: .8rem .5rem;
+            }
+            &:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 5px 25px -5px rgb(167, 167, 167);
+                transition: all ease-in-out .3s;
+            }       
+            p{
+                font-size: .45rem;
+            }
+            #bg{
+                min-height: 190px;
+                grid-row: 1/2;
+                background-color: #e6d604;
+            }
+            .instructor{
+                grid-row: 2/3;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: .5rem;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: .2rem;
+                }
+            }
+            .unit-title{
+                padding: 0 .5rem;
+                p{
+                    font-size: .6rem;
+                }
+            }
+            .bottom{
+                padding: .5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                button{
+                    font-size: 16px;
+                    padding: .2rem;
+                    background: transparent;
+                    border: 2px solid #fff;
+                    border-radius: 4px;
+                    &:hover{
+                        transition: all ease-in-out .3s;
+                        background: #eee;
+                        border: 2px solid #eee;
+                    }
+                }
+            }
+        }
+    }
+}
