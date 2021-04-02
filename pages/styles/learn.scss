@@ -62,9 +62,7 @@ main{
     }
     .title{
         display: flex;
-        justify-content: center;
         @include tablet{
-            justify-content: left;
             margin: 0 .5rem;
         }
         h1{

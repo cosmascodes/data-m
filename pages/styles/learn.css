@@ -49,16 +49,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 758px) {
   #learning-paths .title {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
     margin: 0 .5rem;
   }
 }
