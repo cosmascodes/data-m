@@ -42,6 +42,22 @@ html{
 section{
     padding: 1.2rem;
 }
+#nav_items{
+    #register{
+        border: 2px solid $color;
+        border-radius: 2em;
+        padding: 5px 15px;
+        height: fit-content;
+        margin: auto 0;
+        margin-left: 1.2em;
+        background-color: #e6d604;
+        &:hover{
+            &::before{
+                all: unset;
+            }
+        }
+    }
+}
 
 main{
     h1{
@@ -103,6 +119,31 @@ main{
                 border: transparent;
                 color: #eee;
                 border-radius: .12rem;
+            }
+        }
+    }
+    #d{
+        padding: 3rem 1.2rem;
+        background-color: #f5f6fa;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        #title{
+            grid-column: 2/3;
+        }
+        article{
+            grid-column: 2/3;
+            h4{
+                font-weight: lighter;
+                margin-bottom: .6rem;
+            }
+            button{
+                font-size: inherit;
+                padding: .2rem .5rem;
+                margin-top: .5rem;
+                border-radius: .12rem;
+                background-color: $theme;
+                color: $color;
+                border: transparent;
             }
         }
     }

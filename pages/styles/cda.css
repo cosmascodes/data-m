@@ -24,6 +24,22 @@ section {
   padding: 1.2rem;
 }
 
+#nav_items #register {
+  border: 2px solid #eee;
+  border-radius: 2em;
+  padding: 5px 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+  margin-left: 1.2em;
+  background-color: #e6d604;
+}
+
+#nav_items #register:hover::before {
+  all: unset;
+}
+
 main h1 {
   color: #191970;
   margin-bottom: 1rem;
@@ -108,5 +124,41 @@ main #c article button {
   border: transparent;
   color: #eee;
   border-radius: .12rem;
+}
+
+main #d {
+  padding: 3rem 1.2rem;
+  background-color: #f5f6fa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main #d #title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main #d article {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main #d article h4 {
+  font-weight: lighter;
+  margin-bottom: .6rem;
+}
+
+main #d article button {
+  font-size: inherit;
+  padding: .2rem .5rem;
+  margin-top: .5rem;
+  border-radius: .12rem;
+  background-color: #191970;
+  color: #eee;
+  border: transparent;
 }
 /*# sourceMappingURL=cda.css.map */
