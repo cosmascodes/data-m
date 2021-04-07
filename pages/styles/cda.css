@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*, *::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: 1.2rem;
+}
+
+main h1 {
+  color: #191970;
+  margin-bottom: 1rem;
+}
+
+main #barner {
+  height: 50vh;
+  background-color: #000080;
+  background: url("/assets/adeolu-eletu-unRkg2jH1j0-unsplash.jpg");
+  background-size: cover;
+  background-position: right;
+  background-position-y: 33%;
+}
+
+main #a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.2fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
+  -ms-grid-rows: .5fr 1fr;
+      grid-template-rows: .5fr 1fr;
+}
+
+main #a article {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+main #a article p {
+  margin-bottom: 1.2rem;
+}
+
+main #b {
+  padding: 1.5rem 0;
+  background: url("/assets/pexels-the-lazy-artist-gallery-3307862.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.1fr;
+      grid-template-columns: 1fr 1.1fr;
+}
+
+main #b article {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.2rem;
+}
+
+main #b article button {
+  margin-top: .5rem;
+  font-size: inherit;
+  padding: .4rem;
+  background-color: #191970;
+  border: transparent;
+  color: #eee;
+  border-radius: .12rem;
+}
+
+main #c {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.2fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
+}
+
+main #c article {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main #c article button {
+  margin-top: .5rem;
+  font-size: inherit;
+  padding: .4rem;
+  background-color: #191970;
+  border: transparent;
+  color: #eee;
+  border-radius: .12rem;
+}
+/*# sourceMappingURL=cda.css.map */

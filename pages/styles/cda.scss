@@ -1,0 +1,109 @@
+$theme:#191970;
+$bgcolor: #000080;
+$color: #eee;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,*::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+$tablet: 758px;
+$desktop: 1020px;
+@mixin tablet {
+    @media screen and (min-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$desktop}){
+        @content
+    }
+}
+
+body,html{
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: calc(1em + 1vw);
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    padding: 1.2rem;
+}
+
+main{
+    h1{
+        color: #191970;
+        margin-bottom: 1rem;
+    }
+    #barner{
+        height: 50vh;
+        background-color: #000080;
+        background: url('/assets/adeolu-eletu-unRkg2jH1j0-unsplash.jpg');
+        background-size: cover;
+        background-position: right;
+        background-position-y: 33%;
+    }
+    #a{
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-rows: .5fr 1fr;
+        article{
+            grid-row: 2/3;
+            p{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+    #b{
+        padding: 1.5rem 0;
+        background: url('/assets/pexels-the-lazy-artist-gallery-3307862.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        article{
+            grid-column: 2/3;
+            background-color: rgba(255, 255, 255, .9);
+            padding: 1.2rem;
+            button{
+                margin-top: .5rem;
+                font-size: inherit;
+                padding: .4rem;
+                background-color: $theme;
+                border: transparent;
+                color: #eee;
+                border-radius: .12rem;
+            }
+        }
+    }
+    #c{
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        article{
+            grid-column: 1/2;
+            button{
+                margin-top: .5rem;
+                font-size: inherit;
+                padding: .4rem;
+                background-color: $theme;
+                border: transparent;
+                color: #eee;
+                border-radius: .12rem;
+            }
+        }
+    }
+}
