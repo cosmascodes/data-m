@@ -45,12 +45,14 @@ section{
 #nav_items{
     #register{
         border: 2px solid $color;
-        border-radius: 2em;
         padding: 5px 15px;
         height: fit-content;
         margin: auto 0;
-        margin-left: 1.2em;
         background-color: #e6d604;
+        @include tablet{
+            margin-left: 1.2em;
+            border-radius: 2em;
+        }
         &:hover{
             &::before{
                 all: unset;
@@ -74,8 +76,10 @@ main{
     }
     #a{
         display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        grid-template-rows: .5fr 1fr;
+        @include tablet{
+            grid-template-columns: 1.2fr 1fr;
+            grid-template-rows: .5fr 1fr;
+        }
         article{
             grid-row: 2/3;
             p{
@@ -89,8 +93,10 @@ main{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        display: grid;
-        grid-template-columns: 1fr 1.1fr;
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+        }
         article{
             grid-column: 2/3;
             background-color: rgba(255, 255, 255, .9);
@@ -107,8 +113,10 @@ main{
         }
     }
     #c{
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+        }
         article{
             grid-column: 1/2;
             button{
@@ -125,8 +133,10 @@ main{
     #d{
         padding: 3rem 1.2rem;
         background-color: #f5f6fa;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         #title{
             grid-column: 2/3;
         }
