@@ -1,0 +1,98 @@
+$theme:rgb(25,25,112);
+$bgcolor: rgb(0,0,128);
+$color: #eee;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,*::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+// Responsive
+$tablet: 758px;
+$desktop: 1020px;
+@mixin tablet {
+    @media screen and (min-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: #{$tablet}){
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$desktop}){
+        @content
+    }
+}
+
+body,html{
+    height: 100%;
+}
+
+html{
+    font-size: calc(1em + 1vw);
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    margin-top: 70px;
+    section{
+        padding: 1.2rem;
+        display: grid;
+        @include tablet{
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+    }
+    #form{
+        @include tablet{
+            grid-column: 2/3;
+        }
+        border: 1px solid $theme;
+        border-radius: 5px;
+        padding: 1rem 0;
+        article{
+            font-size: .6rem;
+            padding: .5rem 1.2rem;
+            h1{
+                margin-bottom: .8rem;
+                color: $theme;
+                font-size: 1.2rem;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.2rem;
+            input, select{
+                border: 1px solid $theme;
+                padding: .3rem;
+                font-size: .6rem;
+                margin: .5rem 0;
+            }
+            #submit{
+                background-color: $theme;
+                color: $color;
+                border: transparent;
+            }
+            div{
+                width: 100%;
+                margin-top: .5rem;
+                p{
+                    font-size: .8rem;
+                    span{
+                        color: red;
+                    }
+                }
+                select{
+                    margin-top: .2rem;
+                    width: inherit;
+                }
+            }
+        }
+    }
+}

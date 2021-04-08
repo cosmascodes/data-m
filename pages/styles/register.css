@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*, *::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  margin-top: 70px;
+}
+
+main section {
+  padding: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 758px) {
+  main section {
+    -ms-grid-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+  }
+}
+
+main #form {
+  border: 1px solid midnightblue;
+  border-radius: 5px;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 758px) {
+  main #form {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+main #form article {
+  font-size: .6rem;
+  padding: .5rem 1.2rem;
+}
+
+main #form article h1 {
+  margin-bottom: .8rem;
+  color: midnightblue;
+  font-size: 1.2rem;
+}
+
+main #form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1.2rem;
+}
+
+main #form form input, main #form form select {
+  border: 1px solid midnightblue;
+  padding: .3rem;
+  font-size: .6rem;
+  margin: .5rem 0;
+}
+
+main #form form #submit {
+  background-color: midnightblue;
+  color: #eee;
+  border: transparent;
+}
+
+main #form form div {
+  width: 100%;
+  margin-top: .5rem;
+}
+
+main #form form div p {
+  font-size: .8rem;
+}
+
+main #form form div p span {
+  color: red;
+}
+
+main #form form div select {
+  margin-top: .2rem;
+  width: inherit;
+}
+/*# sourceMappingURL=register.css.map */
